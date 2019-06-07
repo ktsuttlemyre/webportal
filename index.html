@@ -20,6 +20,7 @@
         <script type="text/javascript">
             fetchival('/info').get()
                .then(function(json) {
+                alert(JSON.stringify(json))
                document.getElementById('content').src = json.ip;
             })
         </script>
